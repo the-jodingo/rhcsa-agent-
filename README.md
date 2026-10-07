@@ -1,14 +1,26 @@
-RHCSA STUDY AGENT 
-Custom rhcsa agent for Kernel lovers !
+# RHCSA Study Agent
 
-RHCSA Study Agent is ready! It features:
+A study companion for the **Red Hat Certified System Administrator (EX200)** exam,
+delivered as a single-page web app.
 
-Topic shortcuts across the full EX200 exam blueprint — SELinux, LVM, Podman, Firewalld, Networking, and more
+## Features
 
-Quiz mode — ask it to quiz you and it'll give you a scenario before revealing the answer
+- **Topic shortcuts** across the full EX200 blueprint — SELinux, LVM, Podman,
+  firewalld, networking, and more
+- **Quiz mode** — gives you a scenario before revealing the answer
+- **Command formatting** — commands render as clean code blocks
+- **Conversation memory** — multi-turn lab walkthroughs
+- **Terminal aesthetic**
 
-Command formatting — responses render code blocks cleanly for easy reading
+## Usage
 
-Full conversation memory — it tracks context so you can do multi-turn lab walkthroughs
+Open `index.html` in a browser. No build step, no dependencies.
 
-Terminal aesthetic — because if you're studying for RHCSA, you should feel at home in a shell
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+## License
+
+MIT
